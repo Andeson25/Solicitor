@@ -29,6 +29,14 @@ svg#donut-chart {
   margin: 0 0 0 auto;
 }
 
+a, button {
+  transition: background-color 0.2s linear;
+}
+
+.yellow {
+  color: #ffd500;
+}
+
 * {
   -webkit-box-sizing: border-box !important;
   -moz-box-sizing: border-box !important;
@@ -116,24 +124,14 @@ main section#profile div.left div.photo a:hover {
 }
 main section#profile div.left div.text h2 {
   font-size: 36px;
-  line-height: 40px;
-  font-weight: bold;
-  font-family: OpenSans-Bold, sans-serif;
-}
-main section#profile div.left div.text .stars {
-  margin-bottom: 10px;
-}
-main section#profile div.left div.text .stars svg {
-  height: 25px;
-  margin-right: 5px;
-}
-main section#profile div.left div.text .stars svg:last-child {
-  margin-right: 0;
+  line-height: 38px;
+  color: #4a524e;
+  font-family: "OpenSans-SemiBold", sans-serif;
 }
 main section#profile div.left div.text p {
-  color: #4d565e;
-  font-size: 18px;
-  line-height: 24px;
+  color: #4a524e;
+  font-size: 14px;
+  line-height: 20px;
   font-family: OpenSans-Regular, sans-serif;
 }
 main section#profile div.left div.text .stat {
@@ -144,9 +142,9 @@ main section#profile div.left div.text .stat {
   border-left: 3px solid #00a951;
 }
 main section#profile div.left div.text .stat p {
-  color: #4d565e;
-  font-size: 18px;
-  line-height: 24px;
+  color: #4a524e;
+  font-size: 14px;
+  line-height: 20px;
   font-family: OpenSans-Regular, sans-serif;
 }
 main section#profile div.left div.text .stat p strong {
@@ -154,9 +152,9 @@ main section#profile div.left div.text .stat p strong {
   color: #00a951;
 }
 main section#profile div.left div.text .info p {
-  font-size: 18px;
+  font-size: 14px;
   color: #000;
-  line-height: 24px;
+  line-height: 20px;
 }
 main section#profile div.left div.text .info p:first-child i {
   margin-left: 2.5px;
@@ -170,12 +168,13 @@ main section#profile div.left div.text .info h3 {
   font-size: 22px;
   font-family: OpenSans-Bold, sans-serif;
   font-weight: bold;
+  color: #4a524e;
   text-transform: uppercase;
 }
 main section#profile div.left div.text .info p:last-child {
   color: #4d565e;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 }
 main section#profile div.right.no-premium h3 {
   font-family: "OpenSans-Regular", sans-serif;
@@ -198,13 +197,9 @@ main section#profile div.right.no-premium .profile .heading .info {
   padding-left: 15px;
 }
 main section#profile div.right.no-premium .profile .heading .info h3 {
-  font-family: "OpenSans-SemiBold", sans-serif;
-  font-size: 18px;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 16px;
   margin-bottom: 0;
-}
-main section#profile div.right.no-premium .profile .heading .info .stars svg {
-  width: 20px;
-  height: 20px;
 }
 main section#profile div.right.no-premium .profile .heading .info p:nth-child(2) {
   color: #696a6c;
@@ -289,11 +284,12 @@ main section#profile div.right .fees h3 {
   font-size: 22px;
   font-family: OpenSans-Bold, sans-serif;
   font-weight: bold;
+  color: #4d565e;
   text-transform: uppercase;
 }
 main section#profile div.right .fees p {
   font-family: OpenSans-Regular, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #4d565e;
 }
 main section#profile .contact {
@@ -315,6 +311,8 @@ main section#profile .contact h2 {
 }
 main section#profile .contact a {
   flex-grow: 1;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   padding: 5px 10px;
   border-radius: 5px;
@@ -339,7 +337,7 @@ main section#profile .contact a:last-child {
 main section#profile .contact a:hover {
   text-decoration: none;
   cursor: pointer;
-  background-color: #01984a;
+  background-color: #00cc61;
 }
 main section#sponsored {
   padding: 40px 0;
@@ -372,10 +370,6 @@ main section#sponsored .profile .heading .info h3 {
   font-family: "OpenSans-SemiBold", sans-serif;
   font-size: 18px;
   margin-bottom: 0;
-}
-main section#sponsored .profile .heading .info .stars svg {
-  width: 20px;
-  height: 20px;
 }
 main section#sponsored .profile .heading .info p:nth-child(2) {
   color: #696a6c;
@@ -459,9 +453,6 @@ main section#rating .rating-box h2 small {
   margin-left: -10px;
   font-size: 20px;
 }
-main section#rating .rating-box .stars svg {
-  width: 25px;
-}
 main section#rating .experience {
   padding: 0 40px;
 }
@@ -477,9 +468,6 @@ main section#rating .experience .heading h3 {
   margin-bottom: 0;
   font-size: 18px;
 }
-main section#rating .experience .heading .stars svg {
-  width: 20px;
-}
 main section#rating .experience .experience-one {
   width: 100%;
   margin-bottom: 5px;
@@ -494,9 +482,6 @@ main section#rating .experience .experience-one h3 {
   font-weight: normal;
   margin-bottom: 0;
   font-size: 18px;
-}
-main section#rating .experience .experience-one .stars svg {
-  width: 20px;
 }
 main section#rating .summary {
   padding: 0 40px;
@@ -567,29 +552,31 @@ main section#write-comment .input-wrap input {
   font-family: OpenSans-Regular, sans-serif;
 }
 main section#write-comment .stars {
-  padding: 10px 40px;
+  color: #d5d5d5;
+  margin-bottom: 0;
+  padding: 10px 30px;
+  font-size: 18px;
 }
-main section#write-comment .stars svg {
-  margin-right: 5px;
-  height: 25px;
-  width: 25px;
+main section#write-comment .stars i {
+  margin-bottom: 0;
+  margin-right: 2px;
 }
-main section#write-comment .stars svg:first-child {
+main section#write-comment .stars i:first-child {
   margin-right: 0;
 }
-main section#write-comment .stars svg:hover ~ *, main section#write-comment .stars svg:hover {
+main section#write-comment .stars i:hover {
   cursor: pointer;
+  color: #ffd500 !important;
 }
-main section#write-comment .stars svg:hover ~ * polygon, main section#write-comment .stars svg:hover polygon {
-  fill: #ffb300 !important;
+main section#write-comment .stars i:hover ~ i {
+  color: #ffd500 !important;
 }
 main section#write-comment h3 {
   padding-right: 20px;
   margin-bottom: 0;
   color: #909295;
-  font-size: 18px;
-  font-family: OpenSans-Light, sans-serif;
-  font-weight: lighter;
+  font-size: 15px;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 main section#sort-by {
   height: 64px;
@@ -684,20 +671,24 @@ main section#comments div.comment .comment-text .comment-heading-deleted h3 {
 }
 main section#comments div.comment .comment-text .comment-content-deleted p {
   margin-top: 15px;
-  color: #272b29;
+  color: #4a524e;
   font-family: "OpenSans-Regular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
 }
 main section#comments div.comment .comment-text .comment-content-deleted p:nth-child(2) strong:nth-child(2) {
   color: #00a951;
 }
 main section#comments div.comment .comment-text .comment-content-deleted p:last-child {
-  font-family: "OpenSans-Light", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a4a6a9 !important;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 main section#comments div.comment .comment-text .comment-content-deleted p button {
   font-family: "OpenSans-Regular", sans-serif;
-  padding: 5px 15px;
+  padding: 5px 17px;
+  line-height: 16px;
   background-color: #00a951;
   border: 0;
   outline: none;
@@ -708,7 +699,14 @@ main section#comments div.comment .comment-text .comment-content-deleted p butto
   border-radius: 2.5px;
 }
 main section#comments div.comment .comment-text .comment-content-deleted p button:hover {
-  background-color: #009447;
+  background-color: #00cc61;
+}
+main section#comments div.comment .comment-text .comment-content h2 {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #4a524e;
+  margin-bottom: 0;
 }
 main section#comments div.comment .comment-text .comment-content h3 {
   font-family: "OpenSans-Light", sans-serif;
@@ -718,9 +716,9 @@ main section#comments div.comment .comment-text .comment-content h3 {
   margin-bottom: 0;
 }
 main section#comments div.comment .comment-text .comment-content p {
-  color: #272b29;
+  color: #4a524e;
   font-family: "OpenSans-Regular", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 0;
 }
 main section#comments div.comment .comment-text .comment-content p:last-child {
@@ -728,9 +726,6 @@ main section#comments div.comment .comment-text .comment-content p:last-child {
 }
 main section#comments div.comment .comment-text .comment-content .stars {
   margin: 10px 0;
-}
-main section#comments div.comment .comment-text .comment-content .stars svg {
-  width: 25px;
 }
 main section#comments div.comment .comment-text .answer {
   padding: 15px 0 0;
@@ -772,15 +767,15 @@ main section#comments div.comment .comment-text .answer .heading .info h4 strong
 }
 main section#comments div.comment .comment-text .answer .answer-content p {
   margin-top: 2.5px;
-  color: #272b29;
+  color: #4a524e;
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 14px;
 }
 main section#comments div.comment .comment-text .answer .answer-content p:last-child {
-  font-size: 16px;
+  font-size: 14px;
   color: #a4a6a9 !important;
-  font-family: "OpenSans-Light", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 main section#comments div.comment .comment-text .answer .answer-content p:last-child button {
   font-family: "OpenSans-Regular", sans-serif;
@@ -795,7 +790,7 @@ main section#comments div.comment .comment-text .answer .answer-content p:last-c
   border-radius: 2.5px;
 }
 main section#comments div.comment .comment-text .answer .answer-content p:last-child button:hover {
-  background-color: #009447;
+  background-color: #00cc61;
 }
 main section#comments nav {
   margin-top: 15px;
@@ -814,7 +809,7 @@ main section#comments nav li:hover {
   cursor: pointer;
 }
 main section#comments nav li:hover a {
-  background-color: #00a951;
+  background-color: #00cc61;
   color: white !important;
 }
 main section#comments nav li:hover a span {
@@ -988,7 +983,7 @@ main section#cases button {
 }
 main section#cases button:hover {
   cursor: pointer;
-  background-color: #009949;
+  background-color: #00cc61;
 }
 main section#publications {
   padding: 50px 0;
@@ -1052,7 +1047,7 @@ main section#publications button {
 }
 main section#publications button:hover {
   cursor: pointer;
-  background-color: #009949;
+  background-color: #00cc61;
 }
 main section#education {
   padding: 50px 0;
@@ -1101,7 +1096,7 @@ main section#education button {
 }
 main section#education button:hover {
   cursor: pointer;
-  background-color: #009949;
+  background-color: #00cc61;
 }
 main section#speaking {
   padding: 50px 0;
@@ -1323,7 +1318,7 @@ main section#claim a {
   background-color: #00a951;
 }
 main section#claim a:hover {
-  background-color: #008941;
+  background-color: #00cc61;
 }
 
 @media (max-width: 991.98px) {
@@ -1392,6 +1387,14 @@ main section#claim a:hover {
 
   section#write-comment .stars {
     width: 100%;
+    font-size: 30px;
+    width: 100%;
+  }
+  section#write-comment .stars i {
+    margin-right: 2px;
+  }
+  section#write-comment .stars i:last-child {
+    margin-right: 0;
   }
   section#write-comment h3 {
     width: 100% !important;
