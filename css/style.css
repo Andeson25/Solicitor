@@ -653,10 +653,10 @@ main section#comments div.comment .user h3:last-child {
   color: #00a951;
 }
 main section#comments div.comment .comment-text .comment-heading-deleted h2 {
-  color: #58595b;
-  font-size: 18px;
-  line-height: 24px;
   font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #4a524e;
   margin-bottom: 0;
 }
 main section#comments div.comment .comment-text .comment-heading-deleted h2 i {
@@ -666,7 +666,7 @@ main section#comments div.comment .comment-text .comment-heading-deleted h3 {
   font-family: "OpenSans-Light", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #a4a6a9;
+  color: #4a524e;
   margin-bottom: 0;
 }
 main section#comments div.comment .comment-text .comment-content-deleted p {
@@ -779,7 +779,8 @@ main section#comments div.comment .comment-text .answer .answer-content p:last-c
 }
 main section#comments div.comment .comment-text .answer .answer-content p:last-child button {
   font-family: "OpenSans-Regular", sans-serif;
-  padding: 5px 15px;
+  padding: 5px 17px;
+  line-height: 16px;
   background-color: #00a951;
   border: 0;
   outline: none;
