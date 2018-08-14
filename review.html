@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <nav class="flex-md-row flex-column d-flex align-items-center justify-content-between">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Ask a legal question</a>
+            <a href="#">Find a solicitor</a>
+            <a href="#">Write a review</a>
+            <a href="#">i am a solicitor</a>
+            <a href="#">News and FAQ</a>
+
+        </div>
+        <div>
+            <a href="#">Register</a>
+            <a href="#">Log in</a>
+        </div>
+    </nav>
+    <div class="img-header">
+        <img src="assets/img/logo.png" alt="Solicitor">
+    </div>
+    <div>
+        <h1>Add a review</h1>
+    </div>
+</header>
+<section id="reviewing">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <em>You are reviewing:</em>
+            </div>
+            <div class="col-sm-9">
+                <img src="./assets/review/img/coles.png" alt="">
+                <h2>Coles Solicitors Limited</h2>
+                <p>
+                    <span>5 Victoria Avenue, Harrogate, North Yorkshire, HG1 1EQ</span>
+                    <strong>01423 307777</strong>
+                    <a class="websiteClick" href="http://www.coles-law.co.uk" target="_blank">www.coles-law.co.uk</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="green">Please select your overall rating of Coles Solicitors Limited</h3>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Overall experience</h3>
+                    </div>
+                    <div class=" col-sm-8  d-flex  align-items-center">
+                        <div class="stars flex-row-reverse d-flex">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <span>Great</span>
+                    </div>
+                </div>
+                <br>
+                <h3>Title of your review</h3>
+                <input type="text" class="input-block bordered">
+                <h3>Your review</h3>
+                <textarea class="textarea-block bordered">
+
+                </textarea>
+                <h3>Would you describe <a href="">Coles</a> as any of the following?
+                    <span>(Click as many as you like)</span></h3>
+                <div class="d-flex flex-wrap align-items-start justify-content-start checkboxes">
+                    <div>
+                        <input id="checkbox_1" type="checkbox" class="d-none">
+                        <label for="checkbox_1">
+                            Great communication
+                        </label>
+                    </div>
+                    <div>
+                        <input id="checkbox_2" type="checkbox" class="d-none">
+                        <label for="checkbox_2">
+                            Professional
+                        </label>
+                    </div>
+                    <div>
+                        <input id="checkbox_3" type="checkbox" class="d-none">
+                        <label for="checkbox_3">
+                            Efficient
+                        </label>
+                    </div>
+                    <div>
+                        <input id="checkbox_4" type="checkbox" class="d-none">
+                        <label for="checkbox_4">
+                            Knowledgeable
+                        </label>
+                    </div>
+                    <div>
+                        <input id="checkbox_5" type="checkbox" class="d-none">
+                        <label for="checkbox_5">
+                            First Class service
+                        </label>
+                    </div>
+                </div>
+                <h3>Which Solicitor handled your matter? <span>Which Solicitor handled your matter? (Optional)</span>
+                </h3>
+                <div class="solicitor_one clearfix">
+                    <div class="rounded-circle">
+                        <img src="./assets/review/img/guy.png" alt="">
+                    </div>
+                    <div class="custom_select">
+                        <input type="checkbox" id="drop" class="d-none">
+                        <label for="drop">
+                            <span class="value">Bob Jones</span>
+                            <span class="arrow"></span>
+                            <label class="dropdown">
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    1</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    2</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    3</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    4</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    5</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    6</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    7</h4>
+                            </label>
+                        </label>
+                    </div>
+                    <h4><a href="">Click here </a>is another solicitor assitsyou in the matter?</h4>
+                </div>
+                <h3>Were you satisfied with the outcome of your case?</h3>
+                <div class="radios">
+                    <label>
+                        <input type="radio" value="yes" id="satisfied1" name="satisfied"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" value="no" id="satisfied2" name="satisfied"> No
+                    </label>
+                </div>
+                <h3>Would you recommend this firm to somebody else?</h3>
+                <div class="radios">
+                    <label>
+                        <input type="radio" value="yes" id="recommend1" name="recommend"> Yes
+                    </label><label>
+                    <input type="radio" value="no" id="recommend2" name="recommend"> No
+                </label>
+                </div>
+                <div class="row service">
+                    <div class="col-sm-5 "><h3>Type of service</h3></div>
+                    <div class="custom_select col-md-7">
+                        <input type="checkbox" id="drop_1" class="d-none">
+                        <label for="drop_1">
+                            <span class="value">Bob Jones</span>
+                            <span class="arrow"></span>
+                            <label class="dropdown">
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    1</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    2</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    3</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    4</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    5</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    6</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    7</h4>
+                            </label>
+                        </label>
+                    </div>
+                </div>
+                <div class="row case mb-0">
+                    <div class="col-sm-5 "><h3>When was your case?</h3></div>
+                    <div class="custom_select col-md-7">
+                        <input type="checkbox" id="drop_2" class="d-none">
+                        <label for="drop_2">
+                            <span class="value">Bob Jones</span>
+                            <span class="arrow"></span>
+                            <label class="dropdown">
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    1</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    2</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    3</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    4</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    5</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    6</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    7</h4>
+                            </label>
+                        </label>
+                    </div>
+                </div>
+                <div class="optional">
+                    <h3 class="green">Could you say a little more about it? <span>(optional)</span></h3>
+                    <h3>Click to select a rating</h3>
+                    <ul>
+
+
+                        <li>
+                            <span>
+                                Initial Impression
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Knowledge
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Approachability
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Value for money
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Services
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Professionalism
+                            </span>
+                            <div class="stars flex-row-reverse d-flex">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 offset-md-1">
+
+                <h3 class="green">Recent reviews of Coles Solicitors Limited</h3>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/review.js"></script>
+</body>
+</html>

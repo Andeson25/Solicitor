@@ -24,7 +24,12 @@ html, body {
   margin: 0;
 }
 
+h2, h3, h1 {
+  color: #4a524e;
+}
+
 p {
+  color: #4a524e;
   font-size: 14px !important;
 }
 
