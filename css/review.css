@@ -88,10 +88,10 @@ a, button {
   z-index: 2;
   background-color: #ffffff;
   margin: 0;
-  right: -2.5px;
+  right: -2px;
   top: 33px;
   position: absolute;
-  width: calc(101.5%);
+  width: calc(100% + 4px);
 }
 .custom_select label .dropdown h4 {
   color: #4a524e;
