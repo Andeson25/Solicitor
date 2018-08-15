@@ -333,16 +333,7 @@
                     <h3 class="green">Submit your review</h3>
                     <label class="checkbox-wrapper">
                         <input name="acceptConditions" value="false" type="checkbox" class="d-none">
-                        <input type="checkbox" class="d-none" id="show" onchange="
-                         if(!show){
-                                show=true;
-                                $('.content-integrity').removeClass('hideKey');
-                                $('.content-integrity').addClass('showKey');
-                            }else{
-                                show=false;
-                                $('.content-integrity').removeClass('showKey');
-                                $('.content-integrity').addClass('hideKey');
-                            }">
+                        <input type="checkbox" class="d-none" id="show" onchange="showFunc()">
                         <em><i class="fa fa-check"></i></em>
                         <span>I certify that this review is based on my own experience and is my genuine opinion of this solicitor firm. I have no
 personal or business relationship with this establishment, and have not been offered any incentive or payment originating
