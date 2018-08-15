@@ -362,7 +362,6 @@ header > div:last-child h1 {
   margin-bottom: 15px;
 }
 #content .container .row .col-md-7 .service.case, #content .container .row .col-md-7 .case.case {
-  border-bottom: 1px solid #e8ebea;
   padding-bottom: 20px;
 }
 #content .container .row .col-md-7 .service h3, #content .container .row .col-md-7 .case h3 {
@@ -377,6 +376,7 @@ header > div:last-child h1 {
 }
 #content .container .row .col-md-7 .optional {
   border-bottom: 1px solid #e8ebea;
+  border-top: 1px solid #e8ebea;
   padding: 35px 0;
 }
 #content .container .row .col-md-7 .optional h3:first-child {
@@ -498,6 +498,110 @@ header > div:last-child h1 {
   font-size: 16px;
   line-height: 24px;
   margin-top: 30px;
+}
+#content .container .row .col-md-7 .create {
+  border-bottom: 1px solid #e8ebea;
+  padding: 20px 0;
+}
+#content .container .row .col-md-7 .create h3 {
+  margin-bottom: 20px;
+}
+#content .container .row .col-md-7 .create .facebook, #content .container .row .col-md-7 .create .linked, #content .container .row .col-md-7 .create .google {
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+#content .container .row .col-md-7 .create .facebook.facebook, #content .container .row .col-md-7 .create .linked.facebook, #content .container .row .col-md-7 .create .google.facebook {
+  background-color: #415993;
+}
+#content .container .row .col-md-7 .create .facebook.facebook:hover, #content .container .row .col-md-7 .create .linked.facebook:hover, #content .container .row .col-md-7 .create .google.facebook:hover {
+  filter: brightness(1.05);
+}
+#content .container .row .col-md-7 .create .facebook.linked, #content .container .row .col-md-7 .create .linked.linked, #content .container .row .col-md-7 .create .google.linked {
+  background-color: #3279b1;
+}
+#content .container .row .col-md-7 .create .facebook.linked:hover, #content .container .row .col-md-7 .create .linked.linked:hover, #content .container .row .col-md-7 .create .google.linked:hover {
+  filter: brightness(1.05);
+}
+#content .container .row .col-md-7 .create .facebook.google, #content .container .row .col-md-7 .create .linked.google, #content .container .row .col-md-7 .create .google.google {
+  background-color: #ce5542;
+}
+#content .container .row .col-md-7 .create .facebook.google:hover, #content .container .row .col-md-7 .create .linked.google:hover, #content .container .row .col-md-7 .create .google.google:hover {
+  filter: brightness(1.05);
+}
+#content .container .row .col-md-7 .create .facebook .left, #content .container .row .col-md-7 .create .facebook .right, #content .container .row .col-md-7 .create .linked .left, #content .container .row .col-md-7 .create .linked .right, #content .container .row .col-md-7 .create .google .left, #content .container .row .col-md-7 .create .google .right {
+  padding: 10px 10px;
+  color: #ffffff;
+}
+#content .container .row .col-md-7 .create .facebook .left.left, #content .container .row .col-md-7 .create .facebook .right.left, #content .container .row .col-md-7 .create .linked .left.left, #content .container .row .col-md-7 .create .linked .right.left, #content .container .row .col-md-7 .create .google .left.left, #content .container .row .col-md-7 .create .google .right.left {
+  text-align: center;
+  width: 45px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+#content .container .row .col-md-7 .create .facebook .left i, #content .container .row .col-md-7 .create .facebook .right i, #content .container .row .col-md-7 .create .linked .left i, #content .container .row .col-md-7 .create .linked .right i, #content .container .row .col-md-7 .create .google .left i, #content .container .row .col-md-7 .create .google .right i {
+  line-height: 24px;
+  font-size: 24px;
+}
+#content .container .row .col-md-7 .create .facebook .left h4, #content .container .row .col-md-7 .create .facebook .right h4, #content .container .row .col-md-7 .create .linked .left h4, #content .container .row .col-md-7 .create .linked .right h4, #content .container .row .col-md-7 .create .google .left h4, #content .container .row .col-md-7 .create .google .right h4 {
+  margin-bottom: 0;
+  font-size: 16px !important;
+  line-height: 24px;
+}
+#content .container .row .col-md-7 .email {
+  padding: 20px 0;
+}
+#content .container .row .col-md-7 .email h3 {
+  margin-bottom: 20px;
+}
+#content .container .row .col-md-7 .email h4 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#content .container .row .col-md-7 .email input {
+  border: 1.5px solid #e7e7e7;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 80%;
+}
+#content .container .row .col-md-7 .email button {
+  display: inline;
+  padding: 5px 25px;
+  border-radius: 3px;
+  border: 0;
+  background-color: #00a971;
+  color: #ffffff;
+  font-size: 18px;
+}
+#content .container .row .col-md-7 .email a {
+  text-underline-color: #00a971;
+}
+#content .container .row .col-md-7 .email a:hover {
+  color: #00a971;
+}
+#content .container .row .col-md-7 button:last-child {
+  cursor: pointer;
+  margin-top: 15px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 20px 50px;
+  background-color: #f4c059;
+}
+#content .container .row .col-md-7 button:last-child i {
+  margin-right: 10px;
+}
+#content .container .row .col-md-7 button:last-child:hover {
+  filter: brightness(1.05);
 }
 #content .container .row .col-md-4 h3 {
   font-size: 20px;
