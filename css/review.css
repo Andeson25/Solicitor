@@ -103,6 +103,11 @@ a, button {
   position: relative;
   color: #4a524e;
 }
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  .custom_select label {
+    width: calc(85% - 90px);
+  }
+}
 .custom_select label .arrow {
   position: absolute;
   right: 15px;
@@ -147,8 +152,21 @@ header .img-header {
   padding: 20px 100px;
   background-color: #01af55;
 }
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  header .img-header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
 header .img-header img {
   height: 50px;
+}
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  header .img-header img {
+    margin: 0 auto;
+  }
 }
 header nav {
   padding: 10px 100px;
@@ -189,11 +207,28 @@ header > div:last-child h1 {
   color: #a4a6a9;
   font-size: 20px;
 }
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  #reviewing .row .col-sm-3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  #reviewing .row .col-sm-9 {
+    text-align: center;
+  }
+}
 #reviewing .row .col-sm-9 img {
   display: block;
   float: left;
   width: 110px;
   margin-right: 30px;
+}
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  #reviewing .row .col-sm-9 img {
+    width: 80%;
+    float: none;
+    margin: 0 auto 20px;
+  }
 }
 #reviewing .row .col-sm-9 h2 {
   color: #4a524e;
@@ -216,6 +251,11 @@ header > div:last-child h1 {
   text-align: start;
   font-weight: bolder;
   display: block;
+}
+@media only screen and (max-device-width: 991.98px) and (max-width: 991.98px) {
+  #reviewing .row .col-sm-9 p strong {
+    text-align: center;
+  }
 }
 #reviewing .row .col-sm-9 p a {
   display: block;
@@ -594,7 +634,7 @@ header > div:last-child h1 {
   border: 0;
   border-radius: 3px;
   font-size: 16px;
-  padding: 20px 50px;
+  padding: 20px 65px;
   background-color: #f4c059;
 }
 #content .container .row .col-md-7 button:last-child i {
@@ -606,6 +646,64 @@ header > div:last-child h1 {
 #content .container .row .col-md-4 h3 {
   font-size: 20px;
   font-weight: 600;
+}
+
+footer .footer-links {
+  background: #00af54;
+  padding: 45px 0;
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 20px;
+}
+footer .footer-links a {
+  margin-right: 25px;
+  color: #fff;
+}
+footer .footer-links a:last-child {
+  margin-right: 0;
+}
+footer .footer-copy {
+  background: #333;
+  padding: 27px 0;
+  color: #ced0d1;
+  font-size: 13px;
+}
+footer .footer-copy .footer-logo {
+  display: block;
+  width: 251px;
+  height: 41px;
+  background: url("../assets/img/logo.png") no-repeat;
+  margin-bottom: 10px;
+}
+footer .footer-copy .footer-rs-site-links {
+  margin-top: 51px;
+}
+footer .footer-copy .social-nav {
+  text-align: right;
+  margin-top: 17px;
+}
+footer .footer-copy .social-nav a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  -moz-border-radius: 23px;
+  -webkit-border-radius: 23px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  margin-left: 6px;
+  font-size: 18px;
+}
+footer .footer-copy .social-nav a.facebook {
+  background-color: #39579a;
+}
+footer .footer-copy .social-nav a.twitter {
+  background: #00abf0;
+}
+footer .footer-copy .social-nav a.linkedin {
+  background: #007ab8;
 }
 
 /*# sourceMappingURL=review.css.map */
