@@ -77,9 +77,7 @@
                 <h3>Title of your review</h3>
                 <input type="text" class="input-block bordered">
                 <h3>Your review</h3>
-                <textarea class="textarea-block bordered">
-
-                </textarea>
+                <textarea class="textarea-block bordered"></textarea>
                 <h3>Would you describe <a href="">Coles</a> as any of the following?
                     <span>(Click as many as you like)</span></h3>
                 <div class="d-flex flex-wrap align-items-start justify-content-start checkboxes">
@@ -294,6 +292,79 @@
                         </li>
                     </ul>
                 </div>
+                <div class="cost">
+                    <h3>Would you like to provide us with an indication on how much using this solicitor cost to
+                        instruct? <span>This will not be featured in your review and will not be made public.</span>
+                    </h3>
+                    <h3 class="green">Optional - Would you like to tell us approximately how much you spent?</h3>
+                    <div class="custom_select">
+                        <input type="checkbox" id="drop_3" class="d-none">
+                        <label for="drop_3">
+                            <span class="value">Under £1000t</span>
+                            <span class="arrow"></span>
+                            <label class="dropdown">
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    1</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    2</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    3</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    4</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    5</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    6</h4>
+                                <h4 onclick="event.target.parentElement.parentElement.firstElementChild.innerHTML=event.target.innerHTML">
+                                    7</h4>
+                            </label>
+                        </label>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <h3 class="green">Would you like to leave some feedback for the solicitors to help them improve
+                        their service in future?</h3>
+                    <h3>This feedback will NOT be published on the website but will be sent to Coles Solicitors
+                        Limited.</h3>
+                    <h3>Your feedback</h3>
+                    <textarea class="textarea-block bordered"></textarea>
+                </div>
+                <div class="submit">
+                    <h3 class="green">Submit your review</h3>
+                    <label class="checkbox-wrapper">
+                        <input name="acceptConditions" value="false" type="checkbox" class="d-none">
+                        <input type="checkbox" class="d-none" id="show" onchange="
+                         if(!show){
+                                show=true;
+                                $('.content-integrity').removeClass('hideKey');
+                                $('.content-integrity').addClass('showKey');
+                            }else{
+                                show=false;
+                                $('.content-integrity').removeClass('showKey');
+                                $('.content-integrity').addClass('hideKey');
+                            }">
+                        <em><i class="fa fa-check"></i></em>
+                        <span>I certify that this review is based on my own experience and is my genuine opinion of this solicitor firm. I have no
+personal or business relationship with this establishment, and have not been offered any incentive or payment originating
+from the establishment to write this review. I understand that ReviewSolicitors has a zero-tolerance policy on fake reviews.
+                            <label for="show">(Learn More)</label>
+
+                        </span>
+                        <span class="content-integrity">ReviewSolicitors wishes to ensure that reviewers are not affiliated in any way with the
+establishment they are reviewing. By checking this box, you certify that you are not employed by the establishment, are
+not related to anyone employed there, and do not otherwise have a business or personal relationship with the owners or
+managers of this establishment or a competitor that might bias your review. In addition to being a violation of our terms
+of service and an unethical practice, committing fraud on reviews is also prohibited by law. Please see our
+<a href="/assets/pdf/content-integrity-policy.pdf"
+   target="_blank">Content Integrity Policy</a> for more information.</span>
+                    </label>
+                    <div class="terms-social-media">
+                        From time to time Coles Solicitors Limited may want to showcase your review on their social
+                        media pages (Facebook and Twitter).
+                        By submitting your review then you consent that you are happy to allow us to do this.
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-4 offset-md-1">
 
