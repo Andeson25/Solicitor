@@ -646,6 +646,27 @@ header > div:last-child h1 {
 #content .container .row .col-md-4 h3 {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+#content .container .row .col-md-4 .review {
+  margin-bottom: 20px;
+  display: flex;
+  padding: 15px;
+  border: 3px solid rgba(157, 199, 178, 0.35);
+  border-radius: 2px;
+}
+#content .container .row .col-md-4 .review svg {
+  margin-top: 29px;
+}
+#content .container .row .col-md-4 .review h3 {
+  margin-bottom: 5px;
+}
+#content .container .row .col-md-4 .review p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgba(0, 165, 74, 0.62);
+  line-height: 1.2;
+  text-align: left;
 }
 
 footer .footer-links {
