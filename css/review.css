@@ -621,6 +621,10 @@ header > div:last-child h1 {
   color: #ffffff;
   font-size: 18px;
 }
+#content .container .row .col-md-7 .email button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+}
 #content .container .row .col-md-7 .email a {
   text-underline-color: #00a971;
 }
