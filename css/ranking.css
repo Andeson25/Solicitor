@@ -240,6 +240,9 @@ main .container .row .col-md-9 .ranking-one {
   border-bottom: 2px solid rgba(10, 175, 84, 0.4);
   width: 100%;
 }
+main .container .row .col-md-9 .ranking-one:last-child {
+  border-bottom: none;
+}
 main .container .row .col-md-9 .ranking-one .number h3 {
   font-size: 28px;
   font-family: "OpenSans-SemiBold", sans-serif;
