@@ -79,7 +79,7 @@ a, button {
 }
 
 .green {
-  color: #00a971;
+  color: #00a971 !important;
 }
 
 .custom_select input:checked + label .dropdown {
@@ -355,6 +355,7 @@ header > div:last-child h1 {
 #content .container .row .col-md-7 .checkboxes > div input:checked + label {
   border-color: transparent !important;
   color: #ffffff !important;
+  font-weight: bold;
   background-color: #00a971 !important;
 }
 #content .container .row .col-md-7 .solicitor_one {
@@ -456,20 +457,48 @@ header > div:last-child h1 {
   border-bottom: 1px solid #e8ebea;
 }
 #content .container .row .col-md-7 .cost h3 {
-  font-style: italic;
+  color: black;
   font-size: 14px !important;
   margin-bottom: 10px;
 }
 #content .container .row .col-md-7 .cost h3:first-child {
-  font-style: normal;
+  margin-bottom: 0;
+  font-style: italic;
   font-size: 16px !important;
-  margin-bottom: 10px;
+}
+#content .container .row .col-md-7 .cost p:nth-child(2) {
+  color: #aeaeae;
 }
 #content .container .row .col-md-7 .cost .custom_select {
   width: 100%;
+  margin-bottom: 20px;
 }
 #content .container .row .col-md-7 .cost .custom_select > label {
   width: 70%;
+}
+#content .container .row .col-md-7 .cost .custom_checkbox p {
+  margin: 0 !important;
+}
+#content .container .row .col-md-7 .cost .custom_checkbox label {
+  color: #464646;
+  cursor: pointer;
+  font-size: 14px;
+}
+#content .container .row .col-md-7 .cost .custom_checkbox label input[type=radio]:checked ~ em {
+  color: #444;
+}
+#content .container .row .col-md-7 .cost .custom_checkbox label em {
+  margin-right: 5px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  line-height: 18;
+  font-size: 12px;
+  color: #ffffff;
+  background: #eaeaea;
 }
 #content .container .row .col-md-7 .feedback {
   padding: 20px 0;
