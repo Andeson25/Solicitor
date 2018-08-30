@@ -1,9 +1,9 @@
 data = [{
-    percent: "20"
+    percent: "30"
 }, {
     percent: "40"
 }, {
-    percent: "80"
+    percent: "60"
 }];
 
 function setMarkers(data) {
@@ -11,7 +11,7 @@ function setMarkers(data) {
     let buttons = $('.float-block');
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].style.left = `calc(${data[i].percent}% - ${$(buttons[i]).width() / 2}px - 11.5px`;
+        buttons[i].style.left = `calc(${data[i].percent}% - ${$(buttons[i]).width() / 2}px - 12px`;
         let int = parseInt(data[i].percent);
         if (int <= 15) {
             buttons[i].firstElementChild.style.color = "rgb(34, 177, 76)";
