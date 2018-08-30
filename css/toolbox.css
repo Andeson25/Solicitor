@@ -150,6 +150,7 @@ header nav a:last-child {
 }
 @media screen and (max-width: 768px) {
   .main-content #content {
+    padding: 30px 10px;
     margin-left: 0 !important;
     width: 100% !important;
   }
