@@ -1,9 +1,9 @@
 data = [{
-    percent: "30"
+    percent: "20"
 }, {
     percent: "40"
 }, {
-    percent: "60"
+    percent: "15"
 }];
 
 function setMarkers(data) {
@@ -24,6 +24,11 @@ function setMarkers(data) {
         } else if (int <= 100) {
             buttons[i].firstElementChild.style.color = 'rgb(237, 28, 36)';
         }
+    }
+    buttons.sort((x, y) => {
+        return parseFloat(x.style.left.split('%')[0].split('(')[2]) > parseFloat(y.style.left.split('%')[0].split('(')[2]);
+    });
+    for (let i = 0; i < buttons.length; i++) {
         if (
             buttons[i - 1] !== undefined &&
             parseFloat(buttons[i].style.left.split('%')[0].split('(')[2]) -
