@@ -125,7 +125,11 @@ header nav a:last-child {
 .main-content #dashboard .db-menu .arrow li a:hover {
   opacity: 1;
   cursor: pointer;
+  color: #ffffff !important;
   filter: brightness(1.1);
+}
+.main-content #dashboard .db-menu .arrow li a:hover span {
+  color: #ffffff !important;
 }
 .main-content #dashboard .db-menu .arrow li a i {
   padding: 0;
@@ -148,7 +152,7 @@ header nav a:last-child {
   margin-left: 260px;
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content {
     padding: 30px 10px;
     margin-left: 0 !important;
@@ -205,7 +209,7 @@ header nav a:last-child {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-4 .base {
     margin-right: 0;
   }
@@ -216,7 +220,7 @@ header nav a:last-child {
 .main-content #content .row .col-12 .block .col-md-8 {
   border-left: 2px dotted #d0d0d0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-8 {
     padding-top: 20px;
     border-left: 0;
@@ -229,7 +233,7 @@ header nav a:last-child {
   font-weight: normal;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-8 h3 {
     margin-left: 0;
   }
@@ -243,7 +247,7 @@ header nav a:last-child {
   margin-bottom: 10px;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-8 h2 {
     margin-left: 0;
   }
@@ -255,7 +259,7 @@ header nav a:last-child {
   color: #333333 !important;
   font-family: lato, sans-serif !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-8 p {
     margin-left: 0;
   }
@@ -270,7 +274,7 @@ header nav a:last-child {
   padding: 10px 30px;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
   .main-content #content .row .col-12 .block .col-md-8 label {
     margin-left: 0;
   }

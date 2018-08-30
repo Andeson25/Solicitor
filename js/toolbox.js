@@ -6,6 +6,7 @@
 
 
 function readUrl(event) {
+    $('#file').value='';
     if (event.target.files && event.target.files[0]) {
         let reader = new FileReader();
         reader.onload = (event) => {
