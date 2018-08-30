@@ -38,7 +38,7 @@ function setMarkers(data) {
             parseFloat(data[i - 1].percent) <= 20
             ||
             buttons[i + 1] !== undefined &&
-            parseFloat(data[i+1].percent) -
+            parseFloat(data[i + 1].percent) -
             parseFloat(data[i].percent) <= 20
         ) {
             if (buttons[i - 1] !== undefined && buttons[i - 1].classList.contains('float-bottom')) {
