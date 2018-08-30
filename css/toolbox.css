@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../assets/fonts/OpenSans-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../assets/fonts/OpenSans-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../assets/fonts/OpenSans-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("../assets/fonts/OpenSans-Italic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../assets/fonts/OpenSans-SemiBold.ttf") format("ttf");
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3, h1 {
+  color: #333333;
+}
+
+p {
+  color: #333333;
+  font-size: 14px !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #009041;
+}
+header .img-header {
+  padding: 20px 100px;
+  background-color: #01af55;
+}
+header .img-header img {
+  height: 50px;
+}
+header nav {
+  padding: 10px 100px;
+  font-size: 14px;
+  font-family: OpenSans-Regular, sans-serif;
+}
+header nav a {
+  color: #ffffff;
+  margin-right: 20px;
+}
+header nav a:hover {
+  color: #ffffff;
+  text-underline-color: white;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
+
+.main-content {
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.main-content #dashboard {
+  background: #212d36;
+  background: -moz-linear-gradient(left, #212D36 0%, #212D36 70%, #2C3840 30%, #f6f6f6 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #2C3840), color-stop(30%, #212D36), color-stop(30%, #2C3840), color-stop(70%, #212D36));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2C3840", endColorstr="#212D36", GradientType=1);
+  width: 260px;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  padding: 20px 0;
+  font-family: lato, sans-serif;
+}
+.main-content #dashboard .db-menu .arrow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-content #dashboard .db-menu .arrow li.current:after {
+  width: 0;
+  height: 0;
+  transform: rotate(-90deg);
+  border-left: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #212d36;
+  content: " ";
+  position: absolute;
+  z-index: 1000;
+  top: calc(50% - 9px);
+  right: -20px;
+}
+.main-content #dashboard .db-menu .arrow li {
+  padding: 10px 0 14px 28px;
+  position: relative;
+}
+.main-content #dashboard .db-menu .arrow li a {
+  text-decoration: none;
+  font-family: lato-regular, sans-serif;
+  font-size: 16px;
+  color: #f9f9f9;
+  opacity: 0.7;
+  font-weight: 100;
+}
+.main-content #dashboard .db-menu .arrow li a:hover {
+  opacity: 1;
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+.main-content #dashboard .db-menu .arrow li a i {
+  padding: 0;
+  margin-right: 60px;
+  width: 10px;
+  height: 10px;
+  font-size: 18px;
+}
+.main-content #dashboard .db-menu .arrow li a span {
+  text-decoration: none;
+  font-family: lato-regular, sans-serif;
+  font-size: 16px;
+  color: #f9f9f9;
+  opacity: 0.7;
+  font-weight: 100;
+}
+.main-content #content {
+  background: #fff;
+  height: auto;
+  margin-left: 260px;
+  min-height: 1000px;
+  padding: 30px;
+}
+.main-content #content .row {
+  padding: 0;
+  margin: 0;
+}
+.main-content #content .row .col-12 {
+  padding: 0;
+}
+.main-content #content .row .col-12 h1 {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.main-content #content .row .col-12 p {
+  font-family: lato, sans-serif;
+  font-size: 16px !important;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.main-content #content .row .col-12 .block {
+  margin-bottom: 40px;
+}
+.main-content #content .row .col-12 .block h2 {
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00af54;
+  font-family: lato, sans-serif;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d0d0d0;
+}
+.main-content #content .row .col-12 .block h2:first-child {
+  padding-left: 15px;
+}
+.main-content #content .row .col-12 .block .col-md-4 {
+  width: 100%;
+}
+.main-content #content .row .col-12 .block .col-md-4 .base {
+  margin-right: 40px;
+  background-image: url("../assets/toolbox/base.png");
+  border: 2px dashed #d0d0d0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 150px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content #content .row .col-12 .block .col-md-4 .base img {
+  width: 100%;
+}
+.main-content #content .row .col-12 .block .col-md-8 {
+  border-left: 2px dotted #d0d0d0;
+}
+.main-content #content .row .col-12 .block .col-md-8 h3 {
+  margin-left: 40px;
+  font-size: 16px;
+  font-family: lato, sans-serif;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.main-content #content .row .col-12 .block .col-md-8 h2 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-left: 40px;
+  border-bottom: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.main-content #content .row .col-12 .block .col-md-8 p {
+  margin-left: 40px;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #333333 !important;
+  font-family: lato, sans-serif !important;
+}
+.main-content #content .row .col-12 .block .col-md-8 label {
+  margin-left: 40px;
+  font-size: 14px;
+  font-family: lato, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #00af54;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.main-content #content .row .col-12 .block .col-md-8 label:hover {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 991.98px) {
+  header nav {
+    padding: 10px 15px;
+  }
+  header nav > div a {
+    margin-bottom: 5px !important;
+  }
+  header .img-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px !important;
+  }
+  header .img-header img {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=toolbox.css.map */

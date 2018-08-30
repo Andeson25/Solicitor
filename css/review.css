@@ -336,7 +336,7 @@ header > div:last-child h1 {
   border-bottom: 1px solid #e8ebea;
 }
 #content .container .row .col-md-7 .checkboxes > div {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 #content .container .row .col-md-7 .checkboxes > div:last-child {
   margin-right: 0;
