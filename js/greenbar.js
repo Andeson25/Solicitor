@@ -28,7 +28,7 @@ function setMarkers(data) {
     buttons.sort((x, y) => {
         return parseFloat(x.style.left.split('%')[0].split('(')[2]) > parseFloat(y.style.left.split('%')[0].split('(')[2]);
     });
-    for (let i = 0; i < buttons.length; i++) {
+    for (let i = 1; i < buttons.length; i++) {
         if (
             buttons[i - 1] !== undefined &&
             parseFloat(buttons[i].style.left.split('%')[0].split('(')[2]) -
