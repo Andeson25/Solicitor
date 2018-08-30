@@ -28,15 +28,18 @@ function setMarkers(data) {
     buttons.sort((x, y) => {
         return parseFloat(x.style.left.split('%')[0].split('(')[2]) > parseFloat(y.style.left.split('%')[0].split('(')[2]);
     });
+    data.sort((x, y) => {
+        return parseFloat(x.percent) > parseFloat(y.percent);
+    });
     for (let i = 1; i < buttons.length; i++) {
         if (
             buttons[i - 1] !== undefined &&
-            parseFloat(buttons[i].style.left.split('%')[0].split('(')[2]) -
-            parseFloat(buttons[i - 1].style.left.split('%')[0].split('(')[2]) <= 20
+            parseFloat(data[i].percent) -
+            parseFloat(data[i - 1].percent) <= 20
             ||
             buttons[i + 1] !== undefined &&
-            parseFloat(buttons[i + 1].style.left.split('%')[0].split('(')[2]) -
-            parseFloat(buttons[i].style.left.split('%')[0].split('(')[2]) <= 20
+            parseFloat(data[i+1].percent) -
+            parseFloat(data[i].percent) <= 20
         ) {
             if (buttons[i - 1] !== undefined && buttons[i - 1].classList.contains('float-bottom')) {
 
