@@ -25,12 +25,6 @@ function setMarkers(data) {
             buttons[i].firstElementChild.style.color = 'rgb(237, 28, 36)';
         }
     }
-    buttons.sort((x, y) => {
-        return parseFloat(x.style.left.split('%')[0].split('(')[2]) > parseFloat(y.style.left.split('%')[0].split('(')[2]);
-    });
-    data.sort((x, y) => {
-        return parseFloat(x.percent) > parseFloat(y.percent);
-    });
     for (let i = 1; i < buttons.length; i++) {
         buttons[i].classList.add('float-bottom');
         if (
