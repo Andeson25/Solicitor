@@ -161,7 +161,7 @@ html, body {
 .widget .logo {
   background-color: #00a971;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: center;
 }
