@@ -59,7 +59,7 @@ html, body {
   color: #fe7300;
 }
 .widget .green {
-  color: #00a971 !important;
+  color: #1cb055 !important;
 }
 .widget h2 {
   font-size: 24px;
@@ -144,22 +144,22 @@ html, body {
 .widget .info a {
   margin: 0 auto;
   text-decoration: none;
-  color: #00a971;
+  color: #1cb055;
   border-radius: 20px;
   padding: 10px 20px;
   text-align: center;
   background-color: transparent;
   transition: all 0.2s linear;
-  border: 1px solid #00a971;
+  border: 1px solid #1cb055;
 }
 .widget .info a:hover {
-  background-color: #00a971;
+  background-color: #1cb055;
   border-right-color: #ffffff;
   color: #ffffff;
   cursor: pointer;
 }
 .widget .logo {
-  background-color: #00a971;
+  background-color: #1cb055;
   width: 100%;
   padding: 10px;
   text-align: center;
