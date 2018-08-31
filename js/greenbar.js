@@ -3,7 +3,7 @@ data = [{
 }, {
     percent: "40"
 }, {
-    percent: "73"
+    percent: "70"
 }];
 
 function setMarkers(data) {
