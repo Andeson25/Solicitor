@@ -137,6 +137,15 @@ p {
   top: -12px;
   transform: rotate(180deg);
 }
+.green-bar .base .col-md-8 .bar .float-block.float-bottom-more {
+  top: unset;
+  bottom: -60px;
+}
+.green-bar .base .col-md-8 .bar .float-block.float-bottom-more:after {
+  bottom: unset;
+  top: -42px;
+  transform: rotate(180deg);
+}
 .green-bar .base .col-md-8 .bar .float-block::after {
   position: absolute;
   content: "";

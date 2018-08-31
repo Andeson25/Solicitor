@@ -3,7 +3,7 @@ data = [{
 }, {
     percent: "40"
 }, {
-    percent: "60"
+    percent: "73"
 }];
 
 function setMarkers(data) {
@@ -32,20 +32,14 @@ function setMarkers(data) {
         return parseFloat(x.percent) > parseFloat(y.percent);
     });
     for (let i = 1; i < buttons.length; i++) {
+        buttons[i].classList.add('float-bottom');
         if (
-            buttons[i - 1] !== undefined &&
-            parseFloat(data[i].percent) -
-            parseFloat(data[i - 1].percent) <= 20
-            ||
             buttons[i + 1] !== undefined &&
             parseFloat(data[i + 1].percent) -
-            parseFloat(data[i].percent) <= 20
+            parseFloat(data[i].percent) <= 32
         ) {
-            if (buttons[i - 1] !== undefined && buttons[i - 1].classList.contains('float-bottom')) {
-
-            } else {
-                buttons[i].classList.add('float-bottom');
-            }
+            buttons[i].classList.add('float-bottom-more');
+            $('.bar')[0].style.marginBottom='65px';
         }
     }
 }
