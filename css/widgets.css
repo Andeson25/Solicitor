@@ -161,12 +161,13 @@ html, body {
 .widget .logo {
   background-color: #00a971;
   width: 100%;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 .widget .logo img {
-  width: 55%;
+  margin: 0 auto;
+  height: auto;
+  width: 180px;
 }
 
 /*# sourceMappingURL=widgets.css.map */
